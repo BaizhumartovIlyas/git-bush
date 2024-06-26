@@ -1,0 +1,23 @@
+$ cd ~
+$ mkdir test_3
+$ cd  test_3
+$ touch file4.txt 
+$ touch file5.txt
+$ touch file6.txt  
+$ $ echo -e "row1\nrow2\nrow3\nrow4" >file4.txt
+$ $ echo -e "row1\nrow2\nrow3\nrow4" >file5.txt
+$ $ echo -e "row1\nrow2\nrow3\nrow4" >file6.txt
+$ grep -n "row2" file5.txt
+$ grep -r "row" .
+$ grep -c "row" file6.txt
+$ find ~/test_3 -name "file5.txt" 
+$ find ~/test_3 -name "file5.txt" -exec rm {} \; 
+$ echo "test" >>file4.txt 
+$ sed -i 's/test/fail/g' file4.txt 
+$ echo "test"|cat - file4.txt > temp && mv temp file4.txt 
+$ ps -e 
+$ kill 666
+$ ping artsiomrusau.com
+$ pincg -c 5 artsiomrusau.com 
+$ curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available" 
+$ curl -X POST "https://petstore.swagger.io/v2/pet" -H "Content-Type: application/json" -d '{"id": 0, "category": {"id": 1, "name": "Cats"}, "name": "Fluffy", "photoUrls": ["https://example.com/fluffy.jpg"], "tags": [{"id": 1, "name": "domestic"}], "status": "available"}'
