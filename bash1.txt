@@ -1,0 +1,48 @@
+Asus@DESKTOP-V6RD1JI MINGW64 ~
+$ pwd
+/c/Users/Asus
+$ mkdir test1
+$ cd test1
+$ touch File1.txt
+$ touch File2.txt
+$ touch File3.txt
+$ cd 
+Asus@DESKTOP-V6RD1JI MINGW64 ~
+$ pwd
+/c/Users/Asus
+$ mkdir test2 
+$ cd test2
+Asus@DESKTOP-V6RD1JI MINGW64 ~/test2
+$ rm -r ~/test2
+$ cd .. 
+$ pwd
+/c/Users/Asus
+$ cd ~/test1 
+$ rm file2.txt
+$ cd .. 
+$ pwd
+/c/Users/Asus
+$ mkdir test3 
+$ cd test3 
+Asus@DESKTOP-V6RD1JI MINGW64 ~/test3
+$ cd .. 
+$ pwd
+$ rm -r ~/test3
+$ mkdir test4
+$ cd test4 
+$ cd ~/test1 
+$ mv file1.txt ~/test4 
+$ mv file3.txt ~/test4
+$ cd .. 
+$ cd ~/test4 
+$ echo "line 1" >>file1.txt 
+$ echo "line 2" >>file1.txt 
+$ echo "line 3" >>file1.txt 
+$ cat file1.txt 
+$ echo "line 1" >>file3.txt 
+$ echo "line 2" >>file3.txt 
+$ echo "line 3" >>file3.txt 
+$ cat file1.txt file3.txt 
+$ nano file1.txt
+
+ 
